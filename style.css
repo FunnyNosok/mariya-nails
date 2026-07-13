@@ -209,6 +209,18 @@ ul{ list-style:none; margin:0; padding:0; }
 @media (max-width: 980px){
   .hero-polaroid{ display:none; }
 }
+@media (max-width: 620px){
+  .hero{
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  .hero-tape{
+    position: static;
+    align-self: center;
+    transform: rotate(-2deg);
+    margin-bottom: 2.2rem;
+  }
+}
 
 /* ---------- Marquee ---------- */
 .marquee{
@@ -410,15 +422,6 @@ ul{ list-style:none; margin:0; padding:0; }
 /* ---------- Floating CTA (mobile) ---------- */
 .fab-book{
   display:none;
-  position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%);
-  background: var(--pink); color: var(--ink);
-  font-family: var(--f-sans); font-weight: 800; text-transform: uppercase; letter-spacing:.04em;
-  padding: .9rem 2rem; border-radius: 999px; z-index: 300;
-  box-shadow: 0 6px 18px rgba(0,0,0,.45);
-}
-@media (max-width: 760px){
-  .fab-book{ display:inline-flex; }
-  .hero{ padding-bottom: 6.5rem; }
 }
 
 /* ---------- Reveal-on-scroll ---------- */
